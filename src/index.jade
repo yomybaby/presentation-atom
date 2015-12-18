@@ -1,0 +1,443 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+    title Atom Editor
+
+    link(rel='stylesheet', type='text/css', href='build/build.css')
+    link(rel="stylesheet", type="text/css", href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css")
+    style.
+      .atombg{
+        background-image: url('images/atom-pc.jpg')
+      }
+      .titaniumbg{
+        background-image: url('images/titanium-bg.png')
+      }
+      .titaniumpkgbg{
+        background-image: url('images/atom-titanium-bg.png')
+      }
+      .feature{
+        background-image: url('images/feature.gif')
+      }
+      .uppercase {
+          text-transform: uppercase;
+      }
+
+      .lowercase {
+          text-transform: lowercase;
+      }
+
+      .capitalize {
+          text-transform: capitalize;
+      }
+      
+      h2 {
+        letter-spacing : 0.1em;
+      }
+      
+      h4 {
+        letter-spacing : 0.1em;
+      }
+      
+      .overlay {
+        width : 940px;
+        height: 480px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -470px;
+        margin-top: -240px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        z-index: 1
+      }
+      
+  body
+
+    article
+
+      section
+        
+        h1 
+          img(src="./images/Atom_editor_logo.svg",width="45px")
+          |  atom
+        h3  당신도 해킹 가능한 에디터
+        h4 오픈 프론티어 2기 이종은
+        
+      section
+        img.circle(src="./images/jong.png",width="150px")
+        br
+        h2 이종은
+        h3
+          i.fa.fa-twitter
+          | &nbsp;
+          i.fa.fa-github
+          a(href="https://github.com/yomybaby",target="_blank")  yomybaby
+        p
+          img(src="images/yostudio_logo.svg", alt="yo studio",width="70px")
+          //- | Yo Studio
+      
+      section
+        h1
+          i.fa.fa-laptop
+          |  Web
+          br
+          i.fa.fa-mobile
+          |  Mobile
+      
+      section
+        h2.bullet
+          i.fa.fa-heart.fa-4x.red
+        h2.bullet JavaScript
+        h2.bullet Open Source
+        h2.bullet Creative Commons
+        
+      //- section
+      //-   //- by emojione http://emojione.com
+      //-   img(src="images/emoji_one_family.svg", alt="", width="300px")
+      
+      section
+        h2 목차
+        h3
+          ul
+            li Atom Editor
+            li Titanium
+            li Atom Package for Titanium
+      
+      section(data-bespoke-backdrop='atombg')
+        h1 Atom Editor
+      
+      section
+        div.overlay.bullet
+          img(src="./images/atom-pc.jpg",width="300")
+        div.overlay.bullet
+          i.ion-ios-close-empty.red(style="font-size:30em;margin-top:-250px")
+        
+        
+      section
+        img(src="./images/Atom_editor_logo.svg",width="300px")
+          
+      section
+        //- 캐나다 내각이 남녀 5:5로 구성된 이유에 대한 트뤼도 총리의 대답 
+        img(src="./images/2015.gif",width="300px")
+        h3.bullet Becuase it's
+        h2.bullet.fa-4x 2015
+      
+      section
+        h2 
+          span.fa-4x(style="margin-right:-30px") 21
+          | st centry
+        img(src="./images/future.gif",width="300px")
+        
+      section
+        h2 A Hackable Text Editor
+        h3 for 21st Century
+        h3 by 
+          i.fa.fa-github.fa-3x
+        div.overlay.bullet
+          h2.bullet.fa-5x.red HACKABLE
+      
+      section
+        h2 Building Stuff
+          br
+          | for
+          br
+          | Building Stuff
+        h3 에디터를 만드는 에디터
+      
+
+      section
+        h3 오해
+        h2 작은 팀이나 회사를 위한 에디터?
+        h3 Facebook : Xcode to Atom(Nuclide)
+        
+      section
+        h2 Sublime vs. Atom
+        h3 누가 더 빠른가?
+      
+      section
+        h2 100% Open Source
+        h3 MIT License
+        h3 누구든지 개선 할 수 있다.
+        
+      section
+        h2 웹 기반 에디터
+        h3 Cloud9, Groorm 처럼 브라우저에서?
+      
+      section
+        img(src="./images/electron-logo.svg",width="500px")
+        ul
+          li Web Tech
+          li Open Source
+          li Cross Platform
+    
+      section
+        h2 그럼 왜 Electron
+        br
+        pre.
+          네이티브는 나타나고 사라진다. <br/>하지만 웹은 꾸준히 그 능력이 증가해왔다.
+      
+      
+      section
+        h3 철학
+        h2 
+          span.red LIGHT 
+          | core <br/>
+          span.red MORE 
+          | extensibility
+      
+      section
+        h3 About까지도 패키지
+        img(src="images/about-atom.png", alt="about abtom capture",width="400px")
+        
+      section
+        h3 유용한 패키지 1
+        h2 
+          a(href="https://atom.io/packages/merge-conflicts") Merge Conflicts
+        img(src="./images/pkg-merge.gif",width="400px")
+          
+      section
+        h3 유용한 패키지 2
+        h2 
+          a(href="https://atom.io/packages/linter") Linter
+        img(src="./images/pkg-linter.gif",width="400px")
+      
+      section
+        h3 유용한 패키지 3
+        h2 
+          a(href="https://atom.io/packages/pigments") Pigments
+        img(src="./images/pkg-pigments.gif",width="400px")
+        
+      section
+        h3 유용한 패키지 4
+        h2 
+          a(href="https://atom.io/packages/atom-beautify") Beautify
+        img(src="./images/beautify.gif",width="400px")
+          
+          
+      section
+        h3 모르고 지나갈 만한 
+        h2 기본 패키지들
+        ul
+          li
+            a(href="https://github.com/atom/bracket-matcher", target="_blank") bracket-matcher
+          li 
+            a(href="https://github.com/atom/markdown-preview", target="_blank") markdown-preview
+          li 
+            a(href="https://github.com/atom/open-on-github", target="_blank") Open on Github
+          li ...
+      
+      
+      section
+        //- h3 몇가지 통계
+        a(href="http://blog.atom.io/2015/05/06/one-year-open-source.html",target="_blank")
+          img(src="./images/atom-1-year-open.png",width="500px")
+      
+      section(data-bespoke-backdrop='titaniumbg')
+        h1 Titanium
+        
+        
+      section
+        h2
+          i.fa.fa-apple.fa-3x
+          span &nbsp;&nbsp;&nbsp;
+          i.fa.fa-android.fa-3x
+          span &nbsp;&nbsp;&nbsp;
+          i.fa.fa-windows.fa-3x
+        h3 CROSS PLATFORM      
+        
+      section
+        h2 JavaScript로 
+          br
+          | Native 앱을 만든다.
+
+      section
+        //- h2 Bridge
+        img(src="./images/bridge.png",width="500px")
+      
+      section
+        img(src="./images/appcelerator.png",width="200px")
+        h2 Open Source
+        h3 Apach License 2
+      
+      section
+        h2.fa-5x Q.
+        h3 왜 Titanium을 택했나?
+        
+      section
+        h2.fa-2x A. 생산성
+        h4
+          ul.bullet
+            li.bullet JS 언어하나로 앱, 웹, 서버 모두 가능
+            li.bullet 개인이나 소규모팀에서도 빠르게 서비스 개발!
+      
+      section
+        h2 Less Coding <br/> More Thinking
+        h3 개발보다는 제품자체에 집중
+      
+      //- section
+      //-   h2 SW 품질 제 1법칙 
+      //-   //- ㅐFirst law of software quality
+      //-   h1.bullet e = mc<sup>2</sup>
+      //-   h2.bullet error = (more code)<sup>2</sup>
+      
+      section
+        h2 간편한 크로스 플랫폼 대응
+        //- img(src="./images/platformPath.png",width="200")
+        pre.language-javascript.small_font
+          code.
+            // style
+            "#myTextField[if=Alloy.Globals.isGalaxyS6]" : {
+              height : 80
+            }
+            
+            // controller
+            if(OS_IOS)
+              
+            // view
+            &lt;ActionBar platform="android"\&gt;
+            
+            // path
+            // "./images/android/logo.png"
+            // "./images/iphone/logo.png"
+            "./images/logo.png" 
+      
+      section(data-bespoke-backdrop='titaniumpkgbg')
+        h1 Atom Package
+        h2 for Titanium Alloy
+      
+      section
+        h3 Ti 개발할 때 느끼는
+        h2 Problems
+        h4 
+          ul
+            li 반복적 타이핑
+            li 수많은 API
+            li 잦은 오타
+            li 잦은 파일 이동
+      
+      section
+        h3 SNS 반응
+        img(src="./images/atom_twitter.png",width="400px")
+      
+      section
+        h2 기능
+        h4 
+          ul
+            li Autocomplete
+            li Jump to Definition
+            li Open related files
+            li Sytax Highlight
+      
+      section
+        h2 처음 시작할 때
+        ul
+          li Coffee script
+          li Babel
+          li RegExp
+      
+      section
+        h2 다른 패키지를 수정하는 것부터
+        br
+        pre
+          code.
+            apm dev &lt;package_name&gt; [&lt;directory&gt;]
+      
+      section.emphatic-text(data-bespoke-backdrop='emphatic')
+        h1 Demo
+      
+      section
+        h3 가장 힘든 점?
+        h2 수정 후 Reload editor!
+        pre
+          code.
+            cmd + alt + ctrl + l
+        br
+        h5 개선 PR : 
+          a(href="https://discuss.atom.io/t/reload-package-from-disk-without-reloading-editor/23497",target="_blank") reload package without reloading editor
+      
+      section(data-bespoke-backdrop='feature')
+        h1 Atom의 미래
+      
+      section
+        p 초등학교에서 처음 코딩을 배우는 날 사용한 에디터,
+          br
+          | 그리고 노련한 개발자가 되어도 계속 쓸 수 있는 에디터
+      
+      section
+        img(src="./images/Atom_editor_logo.svg",width="200px")
+        h2 Atom
+      
+      section
+        h2 감사합니다.
+      //- section
+      //-   h2 Keyboard Interaction
+      //-   h3 Powered by <a href="https://github.com/markdalgleish/bespoke-keys">bespoke-keys</a>
+      //- 
+      //- section
+      //-   h2 Touch Interaction
+      //-   h3 Powered by <a href="https://github.com/markdalgleish/bespoke-touch">bespoke-touch</a>
+      //- 
+      //- section
+      //-   h2 Responsive Slides
+      //-   h3 Powered by <a href="https://github.com/markdalgleish/bespoke-scale">bespoke-scale</a>
+      //- 
+      //- section
+      //-   h2 Bullet List
+      //-   h3.bullet Powered by <a href="https://github.com/markdalgleish/bespoke-bullets">bespoke-bullets</a>
+      //-   ul
+      //-     li Bullet 1
+      //-     li Bullet 2
+      //-     li Bullet 3
+      //- 
+      //- section
+      //-   h2 Syntax Highlighting
+      //-   h3 Powered by <a href="http://twitter.com/LeaVerou">Lea Verou</a>'s <a href="https://github.com/LeaVerou/prism">Prism</a>
+      //-   pre
+      //-     code.language-javascript.
+      //-       bespoke.from('article', [
+      //-         classes(),
+      //-         keys(),
+      //-         touch(),
+      //-         bullets('li, .bullet')
+      //-       ]);
+      //- 
+      //- section(data-bespoke-hash='named-route')
+      //-   h2 Named Route
+      //-   h3 Powered by <a href="https://github.com/markdalgleish/bespoke-hash">bespoke-hash</a>
+      //-   p Look up! This route has been named with a <em>'data-bespoke-hash'</em> attribute.
+      //- 
+      //- section.emphatic-text(data-bespoke-backdrop='emphatic')
+      //-   h2 Emphatic Slide!
+      //-   h3 Powered by <a href="https://github.com/markdalgleish/bespoke-backdrop">bespoke-backdrop</a>
+      //- 
+      //- section
+      //-   h2.bullet Just the beginning...
+      //-   br
+      //-   ul
+      //-     li Edit <a href="http://jade-lang.com/">Jade</a> markup in <em>'src/index.jade'</em>
+      //-     li Edit <a href="http://learnboost.github.io/stylus/">Stylus</a> styles in <em>'src/styles/main.styl'</em>
+      //-     li Edit JavaScript in <em>'src/scripts/main.js'</em>
+      //-   br
+      //-   ul
+      //-     li
+      //-       strong Enjoy! :)
+      //-       a(href='http://twitter.com/markdalgleish')  -@markdalgleish
+
+    script(src='build/build.js')

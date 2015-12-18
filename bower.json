@@ -1,0 +1,9 @@
+{
+  "name": "presentation-atom-package",
+  "version": "0.0.0",
+  "dependencies": {
+    "prism": "gh-pages",
+    "font-awesome": "fontawesome#~4.5.0",
+    "Ionicons": "ionicons#~2.0.1"
+  }
+}
