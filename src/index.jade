@@ -8,6 +8,9 @@ html
     link(rel='stylesheet', type='text/css', href='build/build.css')
     link(rel="stylesheet", type="text/css", href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css")
     style.
+      .orion {
+        background-image: url('images/orion.jpg')
+      }
       .atombg{
         background-image: url('images/atom-pc.jpg')
       }
@@ -131,7 +134,9 @@ html
         
         
       section
-        img(src="./images/Atom_editor_logo.svg",width="300px")
+        img.bullet(src="./images/Atom_editor_logo.svg",width="300px")
+        h2.bullet Why Atom?
+          
           
       section
         //- 캐나다 내각이 남녀 5:5로 구성된 이유에 대한 트뤼도 총리의 대답 
@@ -140,7 +145,8 @@ html
         h2.bullet.fa-4x 2015
       
       section
-        h2 
+        h2
+          | for  
           span.fa-4x(style="margin-right:-30px") 21
           | st centry
         img(src="./images/future.gif",width="300px")
@@ -151,36 +157,36 @@ html
         h3 by 
           i.fa.fa-github.fa-3x
         div.overlay.bullet
-          h2.bullet.fa-5x.red HACKABLE
+          h2.bullet.fa-5x.red.red_shadow HACKABLE
       
+      section.no-in-transition
+        div.bullet(style="margin-top:-240px")
+          i.ion-ios-help-empty(style="font-size:30em")
+        div.overlay
+          h2.fa-5x.red.red_shadow HACKABLE
+          
       section
-        h2 Building Stuff
-          br
-          | for
-          br
-          | Building Stuff
-        h3 에디터를 만드는 에디터
-      
-
-      section
-        h3 오해
-        h2 작은 팀이나 회사를 위한 에디터?
-        h3 Facebook : Xcode to Atom(Nuclide)
-        
-      section
-        h2 Sublime vs. Atom
-        h3 누가 더 빠른가?
-      
-      section
+        h5 Hackable #1
+        br
         h2 100% Open Source
-        h3 MIT License
-        h3 누구든지 개선 할 수 있다.
-        
-      section
-        h2 웹 기반 에디터
-        h3 Cloud9, Groorm 처럼 브라우저에서?
+        h3 누구나 자유롭게 개선 할 수 있다.<br/>MIT License
       
       section
+        h5 Hackable #2
+        br
+        h2 JavaScript
+        h3 당신도 읽고 쓸 수 있는 언어
+        
+      section
+        h5 Hackable #3
+        br
+        h2 웹 기반 에디터
+        h3 HTML, CSS, and JavaScript
+        img(src="images/atom-devtool.png", alt="atom 개발자도구 캡쳐", width="500px")
+        //- h3 Cloud9, Groorm 처럼 브라우저에서?
+      section
+        h5 Hackable #3-1
+        br
         img(src="./images/electron-logo.svg",width="500px")
         ul
           li Web Tech
@@ -188,24 +194,62 @@ html
           li Cross Platform
     
       section
+        h5 Hackable #3-2
+        br
         h2 그럼 왜 Electron
         br
-        pre.
+        blockquote.
           네이티브는 나타나고 사라진다. <br/>하지만 웹은 꾸준히 그 능력이 증가해왔다.
       
+      section
+        div.overlay
+          i.ion-ios-help-empty(style="font-size:30em;opacity:0.5")
+        //- h4 의문 두가지
+        h2.bullet Q1. Atom은 Sublime보다 느리다?
+        h3.bullet A1. 네!😅 하지만 달라요!
+          //- ol
+            li Q1. Sublime보다 느리다? <br/>
+              span.bullet(style="padding-left:50px;") YES, BUT!
+            li Q2. 큰 프로젝트에는 부적합하다?
+        
+      section
+        div.overlay
+          i.ion-ios-help-empty(style="font-size:30em;opacity:0.5")
+        //- h4 의문 두가지
+        h2.bullet Q2. Atom은 큰 프로젝트에는 부적합하다?
+        h3.bullet 아니요! Facebook : Xcode to Atom(Nuclide)
+        
+        
+      
+      section
+        h2
+          span Building Stuff
+          br
+          span(style="font-size:0.5em") for
+          br
+          span Building Stuff
+        h3 에디터를 만드는 에디터
       
       section
         h3 철학
         h2 
-          span.red LIGHT 
+          span.red.red_shadow LIGHT 
           | core <br/>
-          span.red MORE 
+          span.red.red_shadow MORE 
           | extensibility
       
       section
         h3 About까지도 패키지
         img(src="images/about-atom.png", alt="about abtom capture",width="400px")
         
+      section(data-bespoke-backdrop='highlight-red')
+        //- TODO:0 wahtever
+        h2 Welcome to the PKG world
+        br
+        pre
+          code.
+            apm install &lt;what-ever-you-want&gt;
+              
       section
         h3 유용한 패키지 1
         h2 
@@ -230,7 +274,26 @@ html
           a(href="https://atom.io/packages/atom-beautify") Beautify
         img(src="./images/beautify.gif",width="400px")
           
-          
+      section
+        h3 유용한 패키지 5
+        h2 
+        a(href="https://atom.io/packages/expand-selection-to-quotes") expand-selection-to-quotes
+        img(src="./images/pkg-selection.gif",width="400px")
+      
+      section
+        h3 유용한 패키지 6
+        h2 
+        a(href="https://atom.io/packages/regex-railroad-diagram") regex-railroad-diagram
+        img(src="./images/pkg-regexp.png",width="400px")
+      
+      section
+        h3 유용한 패키지 7
+        h2 
+        a(href="https://atom.io/packages/imdone-atom") imdone-atom
+        img(src="./images/pkg-done.gif",width="600px")
+      
+      
+        
       section
         h3 모르고 지나갈 만한 
         h2 기본 패키지들
@@ -323,27 +386,78 @@ html
         h2 for Titanium Alloy
       
       section
-        h3 Ti 개발할 때 느끼는
-        h2 Problems
-        h4 
-          ul
-            li 반복적 타이핑
-            li 수많은 API
-            li 잦은 오타
-            li 잦은 파일 이동
+        h3 결심
+        h2 Studio에서 탈출하자!
+        <video x-webkit-airplay="allow" webkit-playsinline="" src="http://s3.amazonaws.com/www.appcelerator.com/video/appc-walkthrough.mp4" style="transform: scale(0.734375, 0.705); left: -170px; right: -170px; width: 1280px; height: 800px; bottom: -118px; top: -118px;" onclick="this.paused?this.play():this.pause();" width="700px"></video>
       
+      section
+        h4 Ti 개발에서 느끼는 어려움 #1
+        h2 Studio가 무겁다
+        h3 Eclipse 기반이기에
+          
+      section
+        h4 Ti 개발에서 느끼는 어려움 #2
+        h2 반복적 타이핑
+        img(src="images/ti-repeat.png", width="400px")
+        
+      section
+        h4 Ti 개발에서 느끼는 어려움 #3
+        h2 수많은 API
+        img(src="images/ti-toomanyapi.png", width="400px")
+        p 
+          i.fa.fa-apple
+          span &nbsp;
+          i.fa.fa-android
+          span &nbsp;
+          i.fa.fa-windows
+      
+      section
+        h4 Ti 개발에서 느끼는 어려움 #4
+        h2 잦은 오타
+        h3 Because JS.
+        span.fa-3x 😱
+      
+      section
+        h4 Ti 개발에서 느끼는 어려움 #5
+        h2 작은 파일 이동
+        h3 View, Style, Controller..
+      
+      section
+        h4.bullet 패키지 개발 절차 #1
+        div.bullet
+          h2 비슷한 놈을 찾아라
+          span.fa-4x 😗😙😚
+      
+      section
+        h4.bullet 패키지 개발 절차 #2
+        div.bullet
+          h2 비슷한 패키지를 Dev로 설치한다.
+          br
+          pre
+            code.
+              apm dev &lt;package_name&gt; [&lt;directory&gt;]
+      
+      section
+        h4.bullet 패키지 개발 절차 #3
+        div.bullet
+          h2 분석하고 수정한다
+          h3 Pull Request 혹은 새로운 패키지로
+        
       section
         h3 SNS 반응
         img(src="./images/atom_twitter.png",width="400px")
       
-      section
-        h2 기능
-        h4 
-          ul
-            li Autocomplete
-            li Jump to Definition
-            li Open related files
-            li Sytax Highlight
+      //- section
+      //-   h2 기능
+      //-   h4 
+      //-     ul
+      //-       li Autocomplete
+      //-       li Jump to Definition
+      //-       li Open related files
+      //-       li Sytax Highlight
+      
+      section.emphatic-text(data-bespoke-backdrop='emphatic')
+        h1 Demo
       
       section
         h2 처음 시작할 때
@@ -353,17 +467,7 @@ html
           li RegExp
       
       section
-        h2 다른 패키지를 수정하는 것부터
-        br
-        pre
-          code.
-            apm dev &lt;package_name&gt; [&lt;directory&gt;]
-      
-      section.emphatic-text(data-bespoke-backdrop='emphatic')
-        h1 Demo
-      
-      section
-        h3 가장 힘든 점?
+        h4 Atom 패키지 개발 Tip #1
         h2 수정 후 Reload editor!
         pre
           code.
@@ -372,14 +476,39 @@ html
         h5 개선 PR : 
           a(href="https://discuss.atom.io/t/reload-package-from-disk-without-reloading-editor/23497",target="_blank") reload package without reloading editor
       
-      section(data-bespoke-backdrop='feature')
+      section
+        h4 Atom 패키지 개발 Tip #2
+        h2 수정 후 Reload editor!
+        
+      section
+        h4 Atom 패키지 개발 Tip #3
+        h2 특정폴더에서 먹통일 때
+        br
+        pre
+          code.
+            rm ~/.atom/storage/*
+        
+      section(data-bespoke-backdrop='orion')
         h1 Atom의 미래
       
       section
-        p 초등학교에서 처음 코딩을 배우는 날 사용한 에디터,
-          br
-          | 그리고 노련한 개발자가 되어도 계속 쓸 수 있는 에디터
+        h3.bullet From
+        p.bullet 초등학교에서 
+          span.red_shadow 처음 코딩을 배우는 날 
+          | 사용한 에디터
+        h3 To
+        p.bullet
+          span.red_shadow 노련한 개발자
+          | 가 되어도 계속 쓸 수 있는 에디터
       
+      section
+        //- 내용 정리
+        h2 기억할 3가지
+        ul.bullet
+          li.bullet Open Source
+          li.bullet JavaScript
+          li.bullet Light core + Pakcakges
+          
       section
         img(src="./images/Atom_editor_logo.svg",width="200px")
         h2 Atom
