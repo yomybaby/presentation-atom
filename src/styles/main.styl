@@ -25,10 +25,9 @@
   text-shadow: 10px 7px 0 rgba(255,0,0,0.5)
   color : #FF2D55
   
-h2 
-  .red_shadow
-    text-shadow: 3px 3px 0 rgba(255,0,0,0.5)
-    color : #FF2D55
+h2.red_shadow, h2 span.red_shadow
+  text-shadow: 3px 3px 0 rgba(255,0,0,0.5)
+  color : #FF2D55
 
 p 
   .red_shadow
@@ -81,3 +80,23 @@ blockquote:before {
 blockquote p {
  display: inline;
 }
+
+.blackbg {
+  background-color rgba(17,17,17,0.8)
+}
+
+.helvetica {
+  font-family: futura, helvetica, arial, arial, sans-serif;
+}
+
+ul.no-dash li
+  list-style: none
+  margin: .2em
+  font-style: normal
+  // transform: translateX(-6px)
+  &:before
+    content: none
+    // margin-right: 4px
+
+.em07 
+  font-size : 0.7em

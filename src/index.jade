@@ -7,6 +7,8 @@ html
 
     link(rel='stylesheet', type='text/css', href='build/build.css')
     link(rel="stylesheet", type="text/css", href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css")
+    link(rel="stylesheet", type="text/css", href="//cdnjs.cloudflare.com/ajax/libs/octicons/3.3.0/octicons.min.css")
+  
     style.
       .orion {
         background-image: url('images/orion.jpg')
@@ -82,6 +84,10 @@ html
           |  atom
         h3  당신도 해킹 가능한 에디터
         h4 오픈 프론티어 2기 이종은
+        br
+        h6
+          a(href="http://yomybaby.github.io/presentation-atom", target="_blank") http://yomybaby.github.io/presentation-atom
+          |  에서 HTML 버전을 볼 수 있습니다.
         
       section
         img.circle(src="./images/jong.png",width="150px")
@@ -93,11 +99,12 @@ html
           i.fa.fa-github
           a(href="https://github.com/yomybaby",target="_blank")  yomybaby
         p
-          img(src="images/yostudio_logo.svg", alt="yo studio",width="70px")
+          img(src="images/yostudio_logo.svg", alt="yo studio",width="50px")
+          img(src="images/tidev.png", width="50px", alt="")
           //- | Yo Studio
       
       section
-        h1
+        h2.fa-2x
           i.fa.fa-laptop
           |  Web
           br
@@ -117,7 +124,7 @@ html
       
       section
         h2 목차
-        h3
+        h3.helvetica
           ul
             li Atom Editor
             li Titanium
@@ -128,11 +135,16 @@ html
       
       section
         div.overlay.bullet
+          h4 고백 #1
           img(src="./images/atom-pc.jpg",width="300")
         div.overlay.bullet
-          i.ion-ios-close-empty.red(style="font-size:30em;margin-top:-250px")
+          i.ion-ios-close-empty.red(style="font-size:30em;margin-top:-220px")
         
-        
+      section
+        h4 고백 #2
+        h2.bullet Atom으로 갈아탄 지 
+        h2.bullet 6개월
+          
       section
         img.bullet(src="./images/Atom_editor_logo.svg",width="300px")
         h2.bullet Why Atom?
@@ -170,6 +182,7 @@ html
         br
         h2 100% Open Source
         h3 누구나 자유롭게 개선 할 수 있다.<br/>MIT License
+        //- h6 since 2014.05.06
       
       section
         h5 Hackable #2
@@ -206,18 +219,25 @@ html
           i.ion-ios-help-empty(style="font-size:30em;opacity:0.5")
         //- h4 의문 두가지
         h2.bullet Q1. Atom은 Sublime보다 느리다?
-        h3.bullet A1. 네!😅 하지만 달라요!
+        h3.bullet 😅 네! 하지만 달라요!
           //- ol
             li Q1. Sublime보다 느리다? <br/>
               span.bullet(style="padding-left:50px;") YES, BUT!
             li Q2. 큰 프로젝트에는 부적합하다?
-        
+      
+      section
+        img(src="images/sublime.png", alt="",width="500px")
+      
+      section
+        h2.bullet Sublime이 그리울 땐
+        img.bullet(src="images/pkg-unregistered.png", alt="", width="600px")
+          
       section
         div.overlay
           i.ion-ios-help-empty(style="font-size:30em;opacity:0.5")
         //- h4 의문 두가지
         h2.bullet Q2. Atom은 큰 프로젝트에는 부적합하다?
-        h3.bullet 아니요! Facebook : Xcode to Atom(Nuclide)
+        h3.bullet 😙 아니요! Facebook : Xcode to Atom(Nuclide)
         
         
       
@@ -248,7 +268,7 @@ html
         br
         pre
           code.
-            apm install &lt;what-ever-you-want&gt;
+            apm install &lt;whatever-you-want&gt;
               
       section
         h3 유용한 패키지 1
@@ -312,10 +332,36 @@ html
         a(href="http://blog.atom.io/2015/05/06/one-year-open-source.html",target="_blank")
           img(src="./images/atom-1-year-open.png",width="500px")
       
+      section
+        h4
+          ul.no-dash
+            li 
+              i.mega-octicon.octicon-package
+              |  3339 
+              span.em07 packages
+            li
+              i.mega-octicon.octicon-paintcan
+              |  &nbsp;&nbsp; 968 
+              span.em07 themes
+            li
+              i.mega-octicon.octicon-squirrel
+              |  &nbsp; 259 
+              span.em07 release
+            
       section(data-bespoke-backdrop='titaniumbg')
         h1 Titanium
         
-        
+      
+      section
+        h2 
+          span.red_shadow JavaScript
+          | 로
+          br
+          span.red_shadow Native
+          | 앱을 만드는
+          br
+          | 플랫폼
+          
       section
         h2
           i.fa.fa-apple.fa-3x
@@ -326,18 +372,24 @@ html
         h3 CROSS PLATFORM      
         
       section
-        h2 JavaScript로 
-          br
-          | Native 앱을 만든다.
-
-      section
-        //- h2 Bridge
-        img(src="./images/bridge.png",width="500px")
-      
-      section
         img(src="./images/appcelerator.png",width="200px")
         h2 Open Source
         h3 Apach License 2
+        
+      section
+        h2.red_shadow.bullet JS to Native
+        div.bullet
+          img(src="./images/react.svg",width="200")
+          h4 Facbook - React Native
+        
+      section
+        div.overlay.bullet
+          h4 &nbsp;
+          img(src="images/vincent-thomas-bridge.svg", width="300px", alt="",style="opacity:0.5;")
+        //- h2 Bridge
+        div.overlay.bullet.blackbg
+          img(src="./images/bridge.png",width="500px")
+      
       
       section
         h2.fa-5x Q.
@@ -347,7 +399,8 @@ html
         h2.fa-2x A. 생산성
         h4
           ul.bullet
-            li.bullet JS 언어하나로 앱, 웹, 서버 모두 가능
+            li.bullet 수많은 API, 다양한 관련 오픈소스
+            li.bullet JavaScript
             li.bullet 개인이나 소규모팀에서도 빠르게 서비스 개발!
       
       section
@@ -360,26 +413,29 @@ html
       //-   h1.bullet e = mc<sup>2</sup>
       //-   h2.bullet error = (more code)<sup>2</sup>
       
-      section
-        h2 간편한 크로스 플랫폼 대응
-        //- img(src="./images/platformPath.png",width="200")
-        pre.language-javascript.small_font
-          code.
-            // style
-            "#myTextField[if=Alloy.Globals.isGalaxyS6]" : {
-              height : 80
-            }
-            
-            // controller
-            if(OS_IOS)
-              
-            // view
-            &lt;ActionBar platform="android"\&gt;
-            
-            // path
-            // "./images/android/logo.png"
-            // "./images/iphone/logo.png"
-            "./images/logo.png" 
+      //- section
+      //-   h2 간편한 크로스 플랫폼 대응
+      //-   //- img(src="./images/platformPath.png",width="200")
+      //-   pre.language-javascript.small_font
+      //-     code.
+      //-       // style
+      //-       "#myTextField[if=Alloy.Globals.isGalaxyS6]" : {
+      //-         height : 80
+      //-       }
+      //-       
+      //-       // controller
+      //-       if(OS_IOS)
+      //-         
+      //-       // view
+      //-       &lt;ActionBar platform="android"\&gt;
+      //-       
+      //-       // path
+      //-       // "./images/android/logo.png"
+      //-       // "./images/iphone/logo.png"
+      //-       "./images/logo.png" 
+      
+      section(data-bespoke-backdrop='highlight-red')
+        h1 Titanium 둘러보기
       
       section(data-bespoke-backdrop='titaniumpkgbg')
         h1 Atom Package
@@ -413,7 +469,7 @@ html
       
       section
         h4 Ti 개발에서 느끼는 어려움 #4
-        h2 잦은 오타
+        h2 오타는 쫌 치명적
         h3 Because JS.
         span.fa-3x 😱
       
@@ -443,9 +499,6 @@ html
           h2 분석하고 수정한다
           h3 Pull Request 혹은 새로운 패키지로
         
-      section
-        h3 SNS 반응
-        img(src="./images/atom_twitter.png",width="400px")
       
       //- section
       //-   h2 기능
@@ -456,9 +509,23 @@ html
       //-       li Open related files
       //-       li Sytax Highlight
       
-      section.emphatic-text(data-bespoke-backdrop='emphatic')
-        h1 Demo
+      section(data-bespoke-backdrop='highlight-red')
+        h1 시연
       
+      section
+        h3 반응
+        img(src="./images/atom_twitter.png",width="400px")
+      
+      section
+        h2.fa-3x.bullet
+          i.ion-ios-cloud-download-outline 
+          | 1,144
+        h2.bullet
+          i.mega-octicon.octicon-git-pull-request
+          |  7<br/>
+          i.mega-octicon.octicon-organization
+          |  4
+          
       section
         h2 처음 시작할 때
         ul
@@ -467,7 +534,9 @@ html
           li RegExp
       
       section
-        h4 Atom 패키지 개발 Tip #1
+        h4 
+          i.ion-bookmark
+          |  Tip 1
         h2 수정 후 Reload editor!
         pre
           code.
@@ -477,11 +546,19 @@ html
           a(href="https://discuss.atom.io/t/reload-package-from-disk-without-reloading-editor/23497",target="_blank") reload package without reloading editor
       
       section
-        h4 Atom 패키지 개발 Tip #2
-        h2 수정 후 Reload editor!
+        h4 
+          i.ion-bookmark
+          |  Tip 2
+        h2 커서위치의 scope 확인
+        br
+        pre
+          code.
+            cmd + alt + p
         
       section
-        h4 Atom 패키지 개발 Tip #3
+        h4 
+          i.ion-bookmark
+          |  Tip 3
         h2 특정폴더에서 먹통일 때
         br
         pre
@@ -501,7 +578,7 @@ html
           span.red_shadow 노련한 개발자
           | 가 되어도 계속 쓸 수 있는 에디터
       
-      section
+      section(data-bespoke-backdrop='highlight-red')
         //- 내용 정리
         h2 기억할 3가지
         ul.bullet
@@ -509,12 +586,33 @@ html
           li.bullet JavaScript
           li.bullet Light core + Pakcakges
           
-      section
+      section(data-bespoke-backdrop='orion')
         img(src="./images/Atom_editor_logo.svg",width="200px")
         h2 Atom
-      
-      section
+
+      section(data-bespoke-backdrop='orion')
         h2 감사합니다.
+        br
+        h5 한국 타이타늄 사용자 모임 : tidev.kr
+        
+      section
+        h5 사용 이미지
+        ul
+          li 
+            a(href="http://www.fontsaddict.com/icon/vincent-thomas-bridge.html", target="_blank") bridge icon by freepik (CC BY)
+          li
+            a(href="http://itnewsjapan.tistory.com/entry/PROJECT-ATOM-에-낚였다", target="_blank") Atom 캐릭터 이미지 by Tokyo Denki University
+        h5 참조
+          ul
+            li
+              a(href="http://www.slideshare.net/ateevexes/an-intro-to-atom-editor", target="_blank") http://www.slideshare.net/ateevexes/an-intro-to-atom-editor
+            li
+              a(href="http://www.wired.com/2015/06/github-atoms-code-editor-nerds-take-universe/", target="_blank") http://www.wired.com/2015/06/github-atoms-code-editor-nerds-take-universe/
+            li
+              a(href="http://code.tutsplus.com/tutorials/check-out-atom-githubs-new-development-editor--net-37030", target="_blank") http://code.tutsplus.com/tutorials/check-out-atom-githubs-new-development-editor--net-37030
+            li
+              a(href="http://johnnunemaker.com/atom-a-hackable-text-editor-for-the-21st-century/", target="_blank") http://johnnunemaker.com/atom-a-hackable-text-editor-for-the-21st-century/
+          
       //- section
       //-   h2 Keyboard Interaction
       //-   h3 Powered by <a href="https://github.com/markdalgleish/bespoke-keys">bespoke-keys</a>
