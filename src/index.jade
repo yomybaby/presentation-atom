@@ -25,6 +25,11 @@ html
       .feature{
         background-image: url('images/feature.gif')
       }
+      
+      .appcstudio{
+        background-image: url('images/appcstudio_shot.jpg')
+      }
+      
       .uppercase {
           text-transform: uppercase;
       }
@@ -79,31 +84,42 @@ html
 
       section
         
-        h1 
-          img(src="./images/Atom_editor_logo.svg",width="45px")
-          |  atom
-        h3  당신도 해킹 가능한 에디터
-        h4 오픈 프론티어 2기 이종은
-        br
-        h6
+        h1 tidev w/<br/>
+          img(src="./images/Atom_editor_logo.svg",width="40px")
+          |  Atom
+        h3 Without Appc Studio
+        h3 
+        h4 Jong
+        //- br
+        //- h6
           a(href="http://yomybaby.github.io/presentation-atom", target="_blank") http://yomybaby.github.io/presentation-atom
           |  에서 HTML 버전을 볼 수 있습니다.
         
       section
+        img(src="./images/yostudio_logo.svg",width="150px",style="padding-right:50px")
         img.circle(src="./images/jong.png",width="150px")
         br
-        h2 이종은
+        h2 Jong Eun Lee
         h3
-          i.fa.fa-twitter
+          i.ion-social-twitter
           | &nbsp;
-          i.fa.fa-github
+          i.ion-social-github
           a(href="https://github.com/yomybaby",target="_blank")  yomybaby
-        p
-          img(src="images/yostudio_logo.svg", alt="yo studio",width="50px")
-          img(src="images/tidev.png", width="50px", alt="")
+          br
+          i.ion-ios-location
+          |  Seoul, South Korea
+          //- br
+          //- i.ion-ios-email
+          //- | &nbsp; jong@yostudio.kr
+        //- p
+        //-   img(src="images/yostudio_logo.svg", alt="yo studio",width="50px")
+        //-   img(src="images/tidev.png", width="50px", alt="")
           //- | Yo Studio
       
       section
+        h2
+          span.fa-3x 7
+          | years
         h2.fa-2x
           i.fa.fa-laptop
           |  Web
@@ -112,26 +128,110 @@ html
           |  Mobile
       
       section
-        h2.bullet
-          i.fa.fa-heart.fa-4x.red
-        h2.bullet JavaScript
-        h2.bullet Open Source
-        h2.bullet Creative Commons
+        img(src="./images/matrix.jpg",width="400px")
+        h3 AS or JS
         
+      section
+        h2 MVC Concept
+        
+      section
+        h2.bullet 2010
+        img.bullet(src="./images/2010worldcup.png",width="150px")
+        
+      section
+        img(src="./images/lonelypub.png",width="450px")
+        
+      section
+        h2
+          i.fa.fa-heart.fa-4x.red
+        h2 Titanium
+        h2 tidev.kr
+        
+      section
+        h2.fa-5x
+          i.ion-settings
+        p 
+          img(src="./images/nav.png",width="100px")
+          img(src="./images/dash-256.png",width="100px")
+          img(src="./images/alfred.png",width="100px")
+      
+      section
+        h2.fa-3x
+          i.ion-ios-time-outline
+        h2 SAVE TIME
+        
+      section
+        p
+          img(src="./images/tistudio.png",width="230px")
+          | &nbsp;
+          img(src="./images/appcstudio2.png",width="200px")
+        //- h3 Titanium Studio
+          
       //- section
       //-   //- by emojione http://emojione.com
       //-   img(src="images/emoji_one_family.svg", alt="", width="300px")
       
       section
-        h2 목차
-        h3.helvetica
-          ul
-            li Atom Editor
-            li Titanium
-            li Atom Package for Titanium
+        h2.bullet Two parts
+        h3.helvetica.bullet
+          | 1. Why I stopped using Appc Studio?
+        h3.helvetica.bullet
+          | 2. How to develop without Appc Studio?
+      
+      section(data-bespoke-backdrop='appcstudio')
+        h1 Why I stopped using Appc Studio?
+      
+      section
+        h2.bullet 3 reasons
+      
+      section
+        h2 #1
+        h3 Not free for production
+        img(src="./images/appc_price.png",width="400px")
+      section
+        h2 #2
+        h3 Heavy
+        img(src="./images/eclipse_slow.png", width="300px")
+      section
+        h2 #3
+        h3 less hackable
+        
+      section(data-bespoke-backdrop='')
+        h1 The Features<br/>of<br/>Appc Studio
+        img(src="./images/eclipse_pugin.png",width="300px")
+      section
+        ul
+          li Editor
+          li Settings
+          li Build
+          li Generate files
+      
+      section
+        //- 파일 열고 닫고 이런 기본적인 에디터를 넘어서 ti/alloy 만을 위해 제공하는 기능이 있다.
+        //- 수많은 API
+        //- MVC가 가져오는 파일의 읽고/쓸때는 장점(명확해지고 짧아지는 효과), 하지만 관련 파일들을 열고 닫는 번거로움 
+        h2 Studio as Editor
+        ul
+          li API Autocompletion
+          li Open related files
+      
+      section
+        h2 Atom
+          
+      section
+        h4 Ti 개발에서 느끼는 어려움 #3
+        h2 수많은 API
+        img(src="images/ti-toomanyapi.png", width="400px")
+        p 
+          i.fa.fa-apple
+          span &nbsp;
+          i.fa.fa-android
+          span &nbsp;
+          i.fa.fa-windows
       
       section(data-bespoke-backdrop='atombg')
         h1 Atom Editor
+      
       
       section
         div.overlay.bullet
